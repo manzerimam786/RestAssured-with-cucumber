@@ -1,4 +1,4 @@
-package com.cucumber;
+package com.restassured.cucumber;
 
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.cucumber;
+package com.restassured.cucumber;
 
 import static org.junit.Assert.assertEquals;
 

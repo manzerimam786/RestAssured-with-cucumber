@@ -1,4 +1,4 @@
-package com.cucumber;
+package com.restassured.cucumber;
 
 import org.junit.runner.RunWith;
 
