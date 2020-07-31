@@ -19,9 +19,7 @@ public class StepsDefinitions {
 	private static Response response;
 	private static String jsonString;
 
-
-
-	@Given("^A list of books are available$")
+	@Given("^A list of employees are available$")
 	public void listOfBooksAreAvailable() {
 		RestAssured.baseURI = BASE_URL;
 		RequestSpecification request = RestAssured.given();
@@ -35,7 +33,7 @@ public class StepsDefinitions {
 		//employeeId = employee.get(0).get("id");	   
 	}
 
-	@When("^I add a book to my reading list$")
+	@When("^I add a employee to my list$")
 	public void addBookInList() {
 		RestAssured.baseURI = BASE_URL;
 		RequestSpecification request = RestAssured.given();
@@ -50,7 +48,7 @@ public class StepsDefinitions {
 		Assert.assertEquals(201, response.getStatusCode());
 	}
 
-	@Then("^The book is added$")
+	@Then("^The employee is added$")
 	public void bookIsAdded() {
 		Assert.assertEquals(201, response.getStatusCode());
 	}

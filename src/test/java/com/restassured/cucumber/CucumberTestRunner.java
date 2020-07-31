@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="classpath:features",glue="com.cucumber")
+@CucumberOptions(features="classpath:features",glue="com.restassured.cucumber")
 public class CucumberTestRunner {
 
 }
